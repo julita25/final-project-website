@@ -19,7 +19,7 @@ const ButtonWithModal = ({ children, title, body, img }) => {
         </Modal.Header>
         <Modal.Body className="flex flex-col gap-5">
           <div>{body}</div>
-          <img src={img} alt="tendline number of accidents" />
+          <img src={img} alt="descriptive pic" />
         </Modal.Body>
         <Modal.Footer>
           <Button onClick={handleClose} appearance="primary">
