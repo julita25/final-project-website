@@ -1,7 +1,7 @@
 import './App.css';
 import Home from './components/Home';
 import Info from './components/Info';
-
+import Methodology from './components/Methodology';
 //styles
 import './index.css';
 import "rsuite/dist/rsuite.min.css"
@@ -15,7 +15,7 @@ function App() {
       </div>
     </div>
   */}
-      <div className={`bg-primary flex justify-center items-start`}>
+      <div className="bg-primary flex justify-center items-start">
         <div className="xl:max-w-[1280px] w-full">
           <Home />
         </div>
@@ -23,6 +23,11 @@ function App() {
       <div className="bg-primary sm:px-16 px-6 flex justify-center items-start">
         <div className="xl:max-w-[1280px] w-full">
           <Info />
+        </div>
+      </div>
+      <div className="bg-primary sm:px-16 px-6 flex justify-center items-start">
+        <div className="xl:max-w-[1280px] w-full">
+          <Methodology />
         </div>
       </div>
     </div>
