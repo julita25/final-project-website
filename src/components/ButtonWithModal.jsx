@@ -10,7 +10,7 @@ const ButtonWithModal = ({ children, title, body, img }) => {
       <Button
         onClick={handleOpen}
         appearance="primary"
-        className="font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none">
+        className="font-poppins font-medium text-[18px] text-primary bg-black-gradient rounded-[10px] outline-none">
         {children}
       </Button>
       <Modal open={open} onClose={handleClose} >
