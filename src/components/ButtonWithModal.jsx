@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Button, Modal } from "rsuite";
+import { problemStatement } from "../constants";
 
-const ButtonWithModal = ({ children, title, body, img }) => {
+const ButtonWithModal = ({ children }) => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -13,13 +14,18 @@ const ButtonWithModal = ({ children, title, body, img }) => {
         className="font-poppins font-medium text-[18px] text-primary bg-black-gradient rounded-[10px] outline-none">
         {children}
       </Button>
-      <Modal open={open} onClose={handleClose} >
+      <Modal open={open} onClose={handleClose} overflow>
         <Modal.Header>
-          <Modal.Title className="text-white">{title}</Modal.Title>
+          <Modal.Title className="text-white">Problem Statement</Modal.Title>
         </Modal.Header>
         <Modal.Body className="flex flex-col gap-5">
-          <div>{body}</div>
-          <img src={img} alt="descriptive pic" />
+          {problemStatement.map((item) => (
+            <>
+              <div>{item.tile}</div>
+              <div>{item.body}</div>
+              <img src={item.img} alt="descriptive pic" />
+            </>
+          ))}
         </Modal.Body>
         <Modal.Footer>
           <Button onClick={handleClose} appearance="primary">

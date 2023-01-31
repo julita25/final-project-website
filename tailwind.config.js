@@ -7,6 +7,10 @@ module.exports = {
     Inria: "Inria Serif",
   },
   theme: {
+    container: {
+      center: true,
+      padding: "4rem",
+    },
     extend: {
       colors: {
         primary: "#00040f",

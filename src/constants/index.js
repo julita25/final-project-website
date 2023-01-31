@@ -1,3 +1,4 @@
+//images
 import one from "../images/one.svg"
 import two from "../images/two.svg";
 import three from "../images/three.svg";
@@ -6,6 +7,13 @@ import chart from "../images/num-accidents.png";
 import accidents from "../images/reasons-accidents.png";
 import suddenSwerve from "../images/sudden-swerve.mp4";
 import forwardCollision from "../images/sudden-swerve.mp4";
+import CV2X from "../images/cv2x.png";
+import DSRC from "../images/dsrc.png";
+
+//icons
+import {SiFuturelearn} from "react-icons/si";
+import {SlSizeFullscreen} from "react-icons/sl";
+import {TbBuildingLighthouse} from "react-icons/tb";
 
 export const features = [
   {
@@ -38,13 +46,32 @@ export const features = [
   },
 ];
 
-export const problemStatement = {
+export const problemStatement = [
+  {
   title: "Problem",
-  text: `While Dubai road infrastructure accounts for being one of the most advances and its transport entity RTA has shown to acitvely
-  invenst in smart projects, truth is that traffic accidents have remained overall steady. If we were to implement a suitable V2X protocol that
-  can adapt to the infrastructure and complies with the netqork requirements this trendline could significantly decrease`,
-  img: chart
-}
+  body: `Dubai road infrastructure is one of the most advanced in the world. RTA has shown to actively
+  invest in smart projects, however, these solutions have not helped in reducing the number traffic accidents. Is posible to see that
+  over the years, these have remained overall steady. If we were to implement a suitable V2X protocol that
+  can adapt to the infrastructure and complies with the network requirements this trendline could significantly decrease`,
+  img: chart,
+  },
+  {
+  title: "DSRC vs CV2X",
+  body: `At the moment the two well recognised V2X protocols are DSRC and CV2X. The former is a complete protocol and the latter is still on
+  development. However there is no right answer, accross the world there has not been wide implementation for any of them. Countries like USA 
+  prefer DSRC and countries like China prefer CV2X. The ides is to find the most suitable for Dubai. DSRC uses IEEE 802.11p, and is specifically 
+  designed to deploy safety-critical applications. The protocol exchanges messages by broadcasting Basic Safety Messages, from which is able to 
+  compute values such as position, speed, direction and estimated trajectory`,
+  img: DSRC
+  },
+  {
+  title: "",
+  body: `Meanwhile, C-V2X relies on the existing cellular infrastructure, using LTE stations for traffic management. When a vehicle is within the 
+  range of a base station, the LTE station schedules and allocates resources for the V2V traffic through the Uu interface. During transmission over the uplink channel, 
+  the eNB assigns the node to any of the available frequency bands and defines how relevant the beacon (vehicular message) is for the other nodes in its cell`,
+  img: CV2X
+  }
+];
 
 export const approachContent = [
   {
@@ -67,4 +94,25 @@ export const approachContent = [
     to see how it could the success rate of each protocol`
    
   }
-]
+];
+
+export const resultsContent = [
+  {
+    title: "More stable",
+    logo: SlSizeFullscreen,
+    text: `Contrary to  DSRC that easily suffers degradation of the network, CV2X ia a centralised protocol. This makes it more stable to handle variation of external factors 
+    like increased number of vehicles, different distances.`
+  },
+  {
+    title: "Promotes future path",
+    logo: SiFuturelearn,
+    text: `CV2X offers a path for the future because it works on releases. While my project, based on release 14 works with 4G, there is also release 15 and 16
+    that include 5g communications and more advance V2X applications like platooning`
+  },
+  {
+    title: "Easier to maintain",
+    logo: TbBuildingLighthouse,
+    text: `Dubai accounts with a very well deployed infrastructure for cellular communications. Accross the city we have providers such as Du and Etisalat. This is important when considering implementation
+    and maintenance costs`
+  }
+];

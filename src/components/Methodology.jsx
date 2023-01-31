@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 
 const Methodology = () => {
   return (
-    <section id="methodology" className="flex flex-col sm:px-16 px-6 gap-5 my-5">
+    <section id="methodology" className="flex flex-col sm:px-16 px-6 gap-10 my-10 h-full gap-16">
       <h2 className="font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full">
         My approach
       </h2>
@@ -23,7 +23,7 @@ const Methodology = () => {
         {approachContent.map((content, index) => (
           <SwiperSlide
             key={index}
-            className="bg-white rounded-3xl p-5 border-b-8 border-[#FAF9FD] h-40 mb-5"
+            className="bg-white rounded-3xl p-5 border-b-8 border-[#FAF9FD] mb-10"
           >
             {content.hasImg ? <img src={content.img} alt="chart" className="object-cover w-full" />
               : <video src={content.video} alt="demostrative video" type="video/mp4" controls />}

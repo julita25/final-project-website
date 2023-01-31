@@ -21,7 +21,7 @@ const FeatureCard = ({ icon, title, content, index }) => (
 const Info = () => {
   return (
     <section id="features" className="flex md:flex-row flex-col sm:px-16 px-6">
-      <div className="flex-1 flex justify-center items-start flex-col gap-5">
+      <div className="flex-1 flex items-start flex-col gap-5">
         <h2 className="font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full">
           My project's <br className="sm:block hidden" /> objectives
         </h2>
