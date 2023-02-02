@@ -12,7 +12,7 @@ const imgContent = [award, award2, award4];
 
 const Home = () => {
   return (
-    <section id="home" className="md:container sm:px-16 px-6 min-h-screen my-10">
+    <section id="home" className="md:container sm:px-16 px-6 min-h-screen mt-10 mb-5">
       <div className="flex md:flex-row justify-center flex-col-reverse items-center md:mt-16">
         <div className="flex-1 flex justify-center items-start flex-col xl:px-0 sm:px-16 px-6">
           <h5 className="flex-1 font-poppins font-semibold ss:text-[42px] text-[42px] text-white ss:leading-[100.8px] leading-[75px]">

@@ -3,7 +3,7 @@ import { resultsContent } from "../constants";
 
 const Analysis = () => {
   return (
-    <section id="methodology" className="flex flex-col sm:px-16 px-6 gap-16 my-5 h-full">
+    <section id="methodology" className="flex flex-col sm:px-16 px-6 gap-16 my-5 h-full pb-10">
       <h2 className="font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full">
         Results: CV2X is more suitable for Dubai
       </h2>

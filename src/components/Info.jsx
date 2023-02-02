@@ -27,7 +27,7 @@ const Info = () => {
         </h2>
         <p className="font-normal text-dimWhite text-[18px] leading-[30.8px] max-w-[470px] mt-5">
           My project aim was to find a protocol that would prevent traffic accidents in Dubai.
-          For this I compared DSRC and V2X protocols in terms of packet loss, throughput, latencies
+          For this I compared DSRC and V2X protocols in terms of packet loss, throughput, latencies to
           decide which one is the best fit for dubai.
         </p>
         <ButtonWithModal title={problemStatement.title} body={problemStatement.text} img={problemStatement.img}>

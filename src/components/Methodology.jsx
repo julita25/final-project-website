@@ -16,7 +16,7 @@ const Methodology = () => {
         pagination={{
           clickable: true,
         }}
-        spaceBetween={20}
+        spaceBetween={25}
         modules={[Pagination]}
         className="rounded-3xl px-5 drop-shadow-primary self-start w-3/4"
       >
@@ -26,7 +26,7 @@ const Methodology = () => {
             className="bg-white rounded-3xl p-5 border-b-8 border-[#FAF9FD] mb-10"
           >
             {content.hasImg ? <img src={content.img} alt="chart" className="object-cover w-full" />
-              : <video src={content.video} alt="demostrative video" type="video/mp4" controls />}
+              : <video src={content.video} alt="demostrative video" type="video/mp4" controls className="object-cover w-full" />}
             <p className="font-normal text-[16px] leading-[30.8px] mt-5">{content.info}</p>
 
           </SwiperSlide>

@@ -35,7 +35,7 @@ export const features = [
     icon: three,
     title: "Safety critical app requirements",
     content:
-      "Evaluating if even after signal degradations the protocols still comply with the requirements of safety-critical-applications",
+      "Evaluating if the protocols comply with the requirements of safety-critical-applications, after signal degradation",
   },
   {
     id: "feature-3",
@@ -50,16 +50,15 @@ export const problemStatement = [
   {
   title: "Problem",
   body: `Dubai road infrastructure is one of the most advanced in the world. RTA has shown to actively
-  invest in smart projects, however, these solutions have not helped in reducing the number traffic accidents. Is posible to see that
-  over the years, these have remained overall steady. If we were to implement a suitable V2X protocol that
-  can adapt to the infrastructure and complies with the network requirements this trendline could significantly decrease`,
+  invest in smart projects, however, these solutions have not helped in reducing the number traffic accidents, as over the years these have remained overall steady. If we were to implement a suitable V2X protocol that
+  can adapt to Dubai infrastructure and complies with the network requirements this trendline could significantly decrease`,
   img: chart,
   },
   {
   title: "DSRC vs CV2X",
   body: `At the moment the two well recognised V2X protocols are DSRC and CV2X. The former is a complete protocol and the latter is still on
   development. However there is no right answer, accross the world there has not been wide implementation for any of them. Countries like USA 
-  prefer DSRC and countries like China prefer CV2X. The ides is to find the most suitable for Dubai. DSRC uses IEEE 802.11p, and is specifically 
+  prefer DSRC and countries like China prefer CV2X. The goal is to find the most suitable protocol for Dubai. DSRC uses IEEE 802.11p, and is specifically 
   designed to deploy safety-critical applications. The protocol exchanges messages by broadcasting Basic Safety Messages, from which is able to 
   compute values such as position, speed, direction and estimated trajectory`,
   img: DSRC
@@ -84,14 +83,14 @@ export const approachContent = [
   {
     video: suddenSwerve,
     info:`For my first scenario, I simulated a car performing sudden swerve (changing lane). The green car (swerving car)  is enabled with a Blind Spot Warning Module,
-    a V2X technology that through computation values of the adyacent lanes only allows the drive to swerve when it considers it safe. I variated the number of cars to evaluate 
+    a V2X technology that computes distance values of the adyacent lanes and decides if its safe or not to perform an swerving action. I variated the number of cars to evaluate 
     how the performance indicators of each protocol would behave`
   },
   {
     video: forwardCollision,
-    info: `For my second scenario, I simulated Not Keeping Safe Distance. The green car is programmed to suddenly stop after few seconds. The rest of the cars are equipped with Forward Collision Module, which
+    info: `For my second scenario, I simulated Not Keeping Safe Distance. The green car is programmed to suddenly stop after few seconds. The rest of the cars are equipped with a Forward Collision Module, which
     constantly checks that the car ahead is within a safe distance, otherwise, it sends a warning message and stops the car. I variated the speed values
-    to see how it could the success rate of each protocol`
+    to see how it could the success rate of preventing an accident of each protocol`
    
   }
 ];
