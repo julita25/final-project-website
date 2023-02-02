@@ -3,12 +3,12 @@ import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import award from "../images/award-1.jpg";
 import award2 from "../images/award-2.jpg";
-import award3 from "../images/award-3.jpg";
+import award4 from "../images/award-4.jpg";
 
 import "swiper/css";
 import "swiper/css/pagination";
 
-const imgContent = [award, award2, award3];
+const imgContent = [award, award2, award4];
 
 const Home = () => {
   return (
