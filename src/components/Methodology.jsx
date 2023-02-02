@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 
 const Methodology = () => {
   return (
-    <section id="methodology" className="flex flex-col sm:px-16 px-6 gap-10 my-10 h-full gap-16">
+    <section id="methodology" className="flex flex-col sm:px-16 px-6 gap-16 my-10 h-full gap-16">
       <h2 className="font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full">
         My approach
       </h2>
